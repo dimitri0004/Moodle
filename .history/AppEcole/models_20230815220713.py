@@ -33,7 +33,7 @@ class Devoir(models.Model):
     projet = models.FileField(upload_to='projets')
     
     def __str__(self):
-        return self.intitule
+        return self.titre
     
     
 # Create your models here.

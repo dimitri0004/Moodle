@@ -23,17 +23,15 @@ class Devoir(models.Model):
     STATUT_CHOICES = [
         ('en_cours', 'En cours'),
         ('soumis', 'Soumis'),
-        ('corrigé', 'Corrige'),
-        ('traité', 'Traite'),
+        ('corrigé', 'Corrigé'),
+        ('traité', 'Traité'),
         ('archivé', 'Archivé'),
     ]
     intitule=models.CharField(max_length=255)
     matiere=models.CharField(max_length=255)
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES)
-    projet = models.FileField(upload_to='projets')
+    projet = models.FileField(upload_to='projet')
     
     def __str__(self):
-        return self.intitule
-    
-    
+        return self.titre
 # Create your models here.

@@ -30,7 +30,7 @@ class Devoir(models.Model):
     intitule=models.CharField(max_length=255)
     matiere=models.CharField(max_length=255)
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES)
-    projet = models.FileField(upload_to='projets')
+    projet = models.FileField(upload_to='/projet')
     
     def __str__(self):
         return self.intitule

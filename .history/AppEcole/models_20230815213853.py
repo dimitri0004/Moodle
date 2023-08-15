@@ -23,8 +23,8 @@ class Devoir(models.Model):
     STATUT_CHOICES = [
         ('en_cours', 'En cours'),
         ('soumis', 'Soumis'),
-        ('corrigé', 'Corrige'),
-        ('traité', 'Traite'),
+        ('corrigé', 'Corrigé'),
+        ('traité', 'Traité'),
         ('archivé', 'Archivé'),
     ]
     intitule=models.CharField(max_length=255)
@@ -33,7 +33,5 @@ class Devoir(models.Model):
     projet = models.FileField(upload_to='projets')
     
     def __str__(self):
-        return self.intitule
-    
-    
+        return self.titre
 # Create your models here.
