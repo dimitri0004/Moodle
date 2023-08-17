@@ -98,6 +98,6 @@ def ajouter_projet(request):
         form = ProjetForm()
     
     context = {'form': form}
-    return render(request, 'Enseignant/projet.html', context)
+    return render(request, 'Ensegnant/projet.html', context)
 
 # Create your views here.

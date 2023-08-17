@@ -33,11 +33,6 @@
     <script src="{% static 'js/page/elearn-index.js' %}"></script>
 </head>
 <body>
-   {% if user.is_authenticated %} 
-   
-    {% include "_partiels/nav.html" %}
-   {% endif %}
-  
     
     {% block content %}{% endblock %}
 </body>

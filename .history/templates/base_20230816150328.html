@@ -33,7 +33,7 @@
     <script src="{% static 'js/page/elearn-index.js' %}"></script>
 </head>
 <body>
-   {% if user.is_authenticated %} 
+   {% if user.User %} 
    
     {% include "_partiels/nav.html" %}
    {% endif %}

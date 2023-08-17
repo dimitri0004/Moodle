@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un projet</title>
+</head>
+<body>
+    <h1>Ajouter un projet</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="col-6">
+            <div class="mb-2">
+            {{ form.as_p }}
+            </div>
+        </div>    
+        <button type="submit">Enregistrer</button>
+    </form>
+</body>
+</html>
+
+
+{% endblock %}
