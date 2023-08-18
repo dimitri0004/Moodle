@@ -1,0 +1,9 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+Etes vous sur de vouloir supprimer le projet {{ intitule }}
+
+{% csrf_token %} supprimer cancel
+
+{% endblock %}

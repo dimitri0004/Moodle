@@ -1,0 +1,428 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="body d-flex py-lg-3 py-md-2">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-0 mb-4 no-bg">
+                    <div class="card-header py-3 px-0 d-flex align-items-center  justify-content-between border-bottom">
+                        <h3 class=" fw-bold flex-fill mb-0">Teachers</h3>
+                        <div class="dropdown px-2">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Subject
+                            </button>
+                            <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Engineering</a></li>
+                              <li><a class="dropdown-item" href="#">Power and Energy</a></li>
+                              <li><a class="dropdown-item" href="#">Civil Law</a></li>
+                              <li><a class="dropdown-item" href="#">Legal Advice</a></li>
+                              <li><a class="dropdown-item" href="#">Health and Fitness</a></li>
+                              <li><a class="dropdown-item" href="#">Hospitality</a></li>
+                              <li><a class="dropdown-item" href="#">Aviation</a></li>
+                              <li><a class="dropdown-item" href="#">Drawing</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Status
+                            </button>
+                            <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">All</a></li>
+                              <li><a class="dropdown-item" href="#">online</a></li>
+                              <li><a class="dropdown-item" href="#">Popular</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-deck py-3">
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar3.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">55k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">10</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar4.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">65k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold fs-6 d-block">Liam Bower</a>
+                            <span class="text-uppercase small text-muted ">Civil Law</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar8.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">85k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold fs-6 d-block">Sophie Glover</a>
+                            <span class="text-uppercase small text-muted ">Legal Advice</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar12.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">95k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">75</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold d-block fs-6">Gavin Bell</a>
+                            <span class="text-uppercase small text-muted ">Creative Arts and Design</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-danger"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar2.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">92k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4.5</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">55</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold fs-6 d-block">Sonia Burgess</a>
+                            <span class="text-uppercase small text-muted ">Farm Management</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar5.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">98k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">5</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">155</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold fs-6 d-block">Avery Bond</a>
+                            <span class="text-uppercase small text-muted ">Telecommunications</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-danger"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar9.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">25k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold fs-6 d-block">Zoe Wright</a>
+                            <span class="text-uppercase small text-muted ">Business and Management</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-danger"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-danger"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card teacher-card">
+                    <div class="card-body p-4 d-flex">
+                        <div class="profile-teacher pe-xl-4 pe-md-2 pe-sm-4 pe-4 text-center w220">
+                            <a href="teachers-info.html">
+                                <img src="assets/images/lg/avatar6.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
+                            </a>
+                            <div class="about-info d-flex align-items-center mt-3 justify-content-center">
+                                <div class="followers me-2">
+                                    <i class="icofont-users color-careys-pink"></i>
+                                    <span class="">75k</span>
+                                </div>
+                                <div class="star me-2">
+                                    <i class="icofont-star text-warning"></i>
+                                    <span class="">4</span>
+                                </div>
+                                <div class="own-video">
+                                    <i class="icofont-video color-light-orange"></i>
+                                    <span class="">35</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
+                            <a href="teachers-info.html" class="mb-0 mt-2  fw-bold fs-6 d-block">Gordon Butler</a>
+                            <span class="text-uppercase small text-muted ">Marketing skills</span>
+                            
+                            <div class="video-setting-icon mt-3 pt-3 border-top">
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success"><i class="icofont-mic color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-success"><i class="icofont-video-cam color-defult-white"></i></button>
+                                    <button type="button" class="btn btn-danger"><i class="icofont-user-alt-4 color-defult-white"></i></button>
+                                </div>
+                            </div>
+                            <ul class="social mb-0 list-inline d-flex mt-3">
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="avatar btn btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Members-->
+<div class="modal fade" id="addUser" tabindex="-1" aria-labelledby="addUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title  fw-bold" id="addUserLabel">Invite Friend's</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="inviteby_email">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Members Invite" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark" type="button" id="button-addon2">Members Invite</button>
+                </div>
+            </div>
+            <div class="members_list">
+                <h6 class="fw-bold ">Members of e-Learn</h6>
+                <ul class="list-unstyled list-group list-group-custom list-group-flush mb-0">
+                    
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
