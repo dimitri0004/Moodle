@@ -220,7 +220,7 @@ def connexion(request):
         logout(request)
     
     error=False
-    message=""
+    messages=""
     if request.method=="POST":
       
         email=request.POST.get('email', None)
@@ -247,7 +247,7 @@ def connexion(request):
         else:        
             error=True
             message="l'utilisateur n'existe pas"  
-    return render(request, 'Utilisateur/connexion.html', {'error':error, 'message':message})     
+    return render(request, 'Utilisateur/connexion.html', {'error':error, 'message':messages})     
 
 
 
