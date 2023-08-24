@@ -32,7 +32,7 @@ def ajouter_soumission(request):
             soumission.user = request.user  # Associate the logged-in user
             soumission.save()  # Now save the instance with the associated user
             return redirect('liste_soumission')
-            message="votre soumission a été ajouter avec succes" # Redirect after successful submission
+            message="votre soumission a été ajouter avec succes"# Redirect after successful submission
     else:
         form = SoumissionForm()
 

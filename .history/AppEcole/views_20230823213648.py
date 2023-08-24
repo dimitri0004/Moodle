@@ -251,7 +251,7 @@ def connexion(request):
 
 
 
-@login_required
+
 def deconnexion(request):
     logout(request)  
     return redirect('login') 

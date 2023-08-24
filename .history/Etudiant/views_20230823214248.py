@@ -31,8 +31,7 @@ def ajouter_soumission(request):
             soumission = form.save(commit=False)  # Create an instance but don't save to the database yet
             soumission.user = request.user  # Associate the logged-in user
             soumission.save()  # Now save the instance with the associated user
-            return redirect('liste_soumission')
-            message="votre soumission a été ajouter avec succes" # Redirect after successful submission
+            form =SoumissionForm()  # Redirect after successful submission
     else:
         form = SoumissionForm()
 
@@ -56,7 +55,7 @@ def modifier_soumission(request, id):
         if form.is_valid():
             form.save()
             return redirect('liste_soumission')
-           
+            message="votre soumission a été modifier avec succes"
             
             
              # Rediriger vers la liste des projets

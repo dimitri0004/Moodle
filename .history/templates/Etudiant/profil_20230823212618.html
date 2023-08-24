@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load static %}
 {% block content %}
 <div class="body d-flex py-lg-3 py-md-2">
     <div class="container-xxl">
@@ -29,7 +28,7 @@
                         </div>
                         <div class="teacher-info border-start ps-xl-4 ps-md-2 ps-sm-4 ps-4 w-100">
                             <h6 class="mb-0 mt-2  fw-bold">{{ utilisateur.first_name }} &nbsp;&nbsp; {{ utilisateur.last_name }}</h6>
-                            <span class="text-uppercase small text-muted">Enseignant {{ utilisateur.username }}</span>
+                            <span class="text-uppercase small text-muted">Etudiant {{ utilisateur.username }}</span>
                             <p class="small text-muted">The purpose of lorem ipsum is to create a natural looking block
                                 of text (sentence,
                                 paragraph, page, etc.) that doesn't distract from the layout. A practice not without
@@ -38,7 +37,7 @@
                                 design, not content.</p>
                             <div class="video-setting-icon mt-3 pt-3 border-top">
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <a  href="{% url 'modifier_profile' utilisateur.id %}" class="btn btn-success"  style="font-size: 20px; color:white;"><i
+                                    <a href="{% url 'profil_modifier' utilisateur.id %}" type="button" class="btn btn-success"  style="font-size: 20px; color:white;"><i
                                             class="icofont-mic color-defult-white"></i>modifier</a>
                                     
                                 </div>

@@ -132,7 +132,7 @@ def modifier_profil(request, id):
                 user.set_password(password)  # Only set password if a new password is provided
             
             user.save()
-            return redirect('afficher_profil')  # Redirect to user list page after successful update
+            return redirect('login')  # Redirect to user list page after successful update
 
     context = {
         'user': user,
@@ -251,7 +251,7 @@ def connexion(request):
 
 
 
-@login_required
+
 def deconnexion(request):
     logout(request)  
     return redirect('login') 
